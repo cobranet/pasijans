@@ -1,0 +1,10 @@
+<h1>Game id <%= @game.id %></h1>
+<div class="container-fluid" id="game" >
+  <div class="row" id="mainrow" >
+    <%= "fakjsdhf ksadhf asdkfh#{@game.id}" %>
+  </div>
+  <div class="row" id="bottomrow" >
+    <%= "This is footer" %>
+  </div>
+</div>
+

@@ -1,0 +1,10 @@
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>This is playing with javascript ...</p>
+  <% if current_user == nil %>  
+    <%= button_to "Sign in with Facebook to play", "/auth/facebook",:class => "btn-lg btn-primary mbtn", method: "get" %> 
+   <% else %> 
+    <%= "Welcome #{current_user.name}" %>
+    <%= button_to "Create new game", games_path,:class => "btn-lg btn-primary mbtn", method: "post" %> 
+   <%end%>
+</div>
